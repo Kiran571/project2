@@ -280,6 +280,31 @@ CREATE TABLE `restaurants` (
 INSERT INTO `restaurants` (`R_ID`, `name`, `employee`, `contact`, `time`, `M_ID`) VALUES
 
 
+
+
+CREATE TABLE `reservation` (
+  `reserve_id` int(11) NOT NULL,
+  `no_of_guest` varchar(100) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `phone` varchar(100) NOT NULL,
+  `date_res` varchar(100) NOT NULL,
+  `time` varchar(100) NOT NULL,
+  `suggestions` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `reservation`
+--
+
+INSERT INTO `reservation` (`reserve_id`, `no_of_guest`, `email`, `phone`, `date_res`, `time`, `suggestions`) VALUES
+(1, '2', 'abdulflezy13@yahoo.com', '09087676543', '2016-12-14', '15:00', 'suggestions suggestions suggestions'),
+(2, '2', 'abdulflezy13@ymail.com', '09087676546', '2016-12-30', '18:00', 'suggestions suggestions suggestions'),
+(3, '10', 'adb@g.c', '09077665544', '2017-11-08', '00:11', 'Suggestions');
+
+--
+-- Indexes for dumped tables
+
+
 --
 -- Indexes for dumped tables
 --
