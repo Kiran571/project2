@@ -260,6 +260,20 @@ INSERT INTO `orders` (`order_ID`, `F_ID`, `foodname`, `price`, `quantity`, `orde
 
 -- --------------------------------------------------------
 
+
+
+
+CREATE TABLE `globals` (
+  `global_id` int(11) NOT NULL,
+  `global_amt` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `globals`
+--
+
+INSERT INTO `globals` (`global_id`, `global_amt`) VALUES
+(1, '2');
 --
 -- Table structure for table `restaurants`
 --
